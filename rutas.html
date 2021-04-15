@@ -39,6 +39,7 @@
 
     <!-- Mis estilos -->
     <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/rutas.css">
   </head>
   <body>
 
@@ -77,199 +78,303 @@
         </div>
       </nav>
     </header>
-    
-<div class="container">
-  <!-- <header class="blog-header py-3">
-    <div class="row flex-nowrap justify-content-between align-items-center">
-      <div class="col-4 pt-1">
-        <a class="link-secondary" href="#">Subscribe</a>
-      </div>
-      <div class="col-4 text-center">
-        <a class="blog-header-logo text-dark" href="#">Large</a>
-      </div>
-      <div class="col-4 d-flex justify-content-end align-items-center">
-        <a class="link-secondary" href="#" aria-label="Search">
-          <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2" class="mx-3" role="img" viewBox="0 0 24 24"><title>Search</title><circle cx="10.5" cy="10.5" r="7.5"/><path d="M21 21l-5.2-5.2"/></svg>
-        </a>
-        <a class="btn btn-sm btn-outline-secondary" href="#">Sign up</a>
-      </div>
-    </div>
-  </header> -->
 
-  <div class="nav-scroller py-1 mb-2">
-    <nav class="nav d-flex justify-content-between">
-      <a class="p-2 link-secondary" href="#">World</a>
-      <a class="p-2 link-secondary" href="#">U.S.</a>
-      <a class="p-2 link-secondary" href="#">Technology</a>
-      <a class="p-2 link-secondary" href="#">Design</a>
-      <a class="p-2 link-secondary" href="#">Culture</a>
-      <a class="p-2 link-secondary" href="#">Business</a>
-      <a class="p-2 link-secondary" href="#">Politics</a>
-      <a class="p-2 link-secondary" href="#">Opinion</a>
-      <a class="p-2 link-secondary" href="#">Science</a>
-      <a class="p-2 link-secondary" href="#">Health</a>
-      <a class="p-2 link-secondary" href="#">Style</a>
-      <a class="p-2 link-secondary" href="#">Travel</a>
-    </nav>
-  </div>
+    <main>
+      <section class="rutas-portada">
+        <div class="container">
+          <h1 class="display-2 text-center">Rutas por la Sierra de Guadarrama</h1>
+          <p class="lead text-center d-none d-sm-flex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+            debitis necessitatibus, excepturi officia iure. Deserunt, id! Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+            debitis necessitatibus, excepturi officia iure. Deserunt, id!
+          </p>
+        </div>
+      </section>
+      
+      <div class="container">
+        <section class="filtros row mb-5">
+          <h3 class="col-12 mb-4 mt-2">Búsqueda avanzada</h3>
+          <div class="search-post col-12 mb-3 ">
+            <input class="form-control rounded" type="text" name="search" aria-label="Buscar" placeholder="Buscar por título...">
+            <svg class="bi bi-search" id="search-addon" xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 16 16">
+              <path d="M11.742 10.344a6.5 6.5 0 1 0-1.397 1.398h-.001c.03.04.062.078.098.115l3.85 3.85a1 1 0 0 0 1.415-1.414l-3.85-3.85a1.007 1.007 0 0 0-.115-.1zM12 6.5a5.5 5.5 0 1 1-11 0 5.5 5.5 0 0 1 11 0z"/>
+            </svg>
+          </div>
+          <div class="col-12 col-md-6 seleccion-zona row">
+            <label for="zona" class="col-form-label col-lg-2"><h5>Zona</h5></label>
+            <div class="col-lg-10">
+              <select id="zona" class="form-select" aria-label="Selección de la zona">
+                <option selected></option>
+                <option value="1">La Pedriza</option>
+                <option value="2">Sierra de Malagón</option>
+                <option value="3">Cotos</option>
+              </select>
+            </div>
+          </div>
+          <div class="col-12 col-md-6 ordenar-posts row">
+            <label for="ordenar" class="col-form-label col-lg-2"><h5>Ordenar</h5></label>
+            <div class="col-lg-10">
+              <select id="ordenar" class="form-select" aria-label="Tipo de ordenación">
+                <option selected>Más nuevo a más antiguo</option>
+                <option value="1">Más antiguo a más nuevo</option>
+                <option value="2">Popularidad</option>
+                <option value="3">Más comentado</option>
+              </select>
+            </div>
+          </div>
+        </section>
+
+        <section class="rutas row mb-2">
+
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden mb-4 shadow-sm h-md-50 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block pedriza">La Pedriza</strong>
+                </div>
+                <h4 class="mb-1">Subida al Yelmo</h4>
+                <div class="mb-1 text-muted date">Marzo 21</div>
+                <p class="card-text">
+                 Esta ruta la realizamos, principalmente, siguiedo la Senda Maeso; que empieza en el pueblo y acaba en la Pedriza anterior.
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/yelmo/portada_xs.jpg" alt="El Yelmo" class="bd-placeholder-img" focusable="false">
+              </div>
+            </div>
+          </div>
+          
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block malagon">Sierra de Malagon</strong>
+                </div>
+                <h4 class="mb-1">Machotas por la Silla de Felipe II</h4>
+                <div class="mb-1 text-muted date">Abril 21</div>
+                <p class="card-text">Subida desde la Silla de Felipe II hasta el collado entre cabezas, de ahí a la machota baja
+                  y luego a la alta, ...
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/machotas/portada_xs.jpg" alt="El Pico del Fraile" class="bd-placeholder-img" focusable="false">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block pedriza">La Pedriza</strong>
+                </div>
+                <h4 class="mb-1">Subida al Yelmo</h4>
+                <div class="mb-1 text-muted date">Marzo 21</div>
+                <p class="card-text">
+                  Esta ruta la realizamos, principalmente, siguiedo la Senda Maeso; que empieza en el pueblo y acaba en la Pedriza anterior.
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/yelmo/portada_xs.jpg" alt="El Yelmo" class="bd-placeholder-img" focusable="false">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block malagon">Sierra de Malagon</strong>
+                </div>
+                <h4 class="mb-1">Machotas por la Silla de Felipe II</h4>
+                <div class="mb-1 text-muted">Abril 21</div>
+                <p class="card-text">Subida desde la Silla de Felipe II hasta el collado entre cabezas, de ahí a la machota baja
+                  y luego a la alta, ...
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/machotas/portada_xs.jpg" alt="El Pico del Fraile" class="bd-placeholder-img" focusable="false">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block pedriza">La Pedriza</strong>
+                </div>
+                <h4 class="mb-1">Subida al Yelmo</h4>
+                <div class="mb-1 text-muted date">Marzo 21</div>
+                <p class="card-text">
+                  Esta ruta la realizamos, principalmente, siguiedo la Senda Maeso; que empieza en el pueblo y acaba en la Pedriza anterior.
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/yelmo/portada_xs.jpg" alt="El Yelmo" class="bd-placeholder-img" focusable="false">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block malagon">Sierra de Malagon</strong>
+                </div>
+                <h4 class="mb-1">Machotas por la Silla de Felipe II</h4>
+                <div class="mb-1 text-muted">Abril 21</div>
+                <p class="card-text">Subida desde la Silla de Felipe II hasta el collado entre cabezas, de ahí a la machota baja
+                  y luego a la alta, ...
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/machotas/portada_xs.jpg" alt="El Pico del Fraile" class="bd-placeholder-img" focusable="false">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block pedriza">La Pedriza</strong>
+                </div>
+                <h4 class="mb-1">Subida al Yelmo</h4>
+                <div class="mb-1 text-muted date">Marzo 21</div>
+                <p class="card-text">
+                  Esta ruta la realizamos, principalmente, siguiedo la Senda Maeso; que empieza en el pueblo y acaba en la Pedriza anterior.
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/yelmo/portada_xs.jpg" alt="El Yelmo" class="bd-placeholder-img" focusable="false">  
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block malagon">Sierra de Malagon</strong>
+                </div>
+                <h4 class="mb-1">Machotas por la Silla de Felipe II</h4>
+                <div class="mb-1 text-muted">Abril 21</div>
+                <p class="card-text">Subida desde la Silla de Felipe II hasta el collado entre cabezas, de ahí a la machota baja
+                  y luego a la alta, ...
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/machotas/portada_xs.jpg" alt="El Pico del Fraile" class="bd-placeholder-img" focusable="false">
+              </div>
+            </div>
+          </div>
+
+
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block pedriza">La Pedriza</strong>
+                </div>
+                <h4 class="mb-1">Subida al Yelmo</h4>
+                <div class="mb-1 text-muted date">Marzo 21</div>
+                <p class="card-text">
+                  Esta ruta la realizamos, principalmente, siguiedo la Senda Maeso; que empieza en el pueblo y acaba en la Pedriza anterior.
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/yelmo/portada_xs.jpg" alt="El Yelmo" class="bd-placeholder-img" focusable="false">
+              </div>
+            </div>
+          </div>
+
+          <div class="col-md-6 post">
+            <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+              <div class="col p-4 d-flex flex-column position-static">
+                <div class="post-zona">
+                  <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-tag-fill" viewBox="0 0 16 16">
+                    <path d="M2 1a1 1 0 0 0-1 1v4.586a1 1 0 0 0 .293.707l7 7a1 1 0 0 0 1.414 0l4.586-4.586a1 1 0 0 0 0-1.414l-7-7A1 1 0 0 0 6.586 1H2zm4 3.5a1.5 1.5 0 1 1-3 0 1.5 1.5 0 0 1 3 0z"/>
+                  </svg>
+                  <strong class="d-inline-block malagon">Sierra de Malagon</strong>
+                </div>
+                <h4 class="mb-1">Machotas por la Silla de Felipe II</h4>
+                <div class="mb-1 text-muted">Abril 21</div>
+                <p class="card-text">Subida desde la Silla de Felipe II hasta el collado entre cabezas, de ahí a la machota baja
+                  y luego a la alta, ...
+                </p>
+                <a href="#" class="stretched-link">Continúa leyendo...</a>
+              </div>
+              <div class="col-auto d-none d-lg-block">
+                <img src="assets/images/rutas/machotas/portada_xs.jpg" alt="El Pico del Fraile" class="bd-placeholder-img" focusable="false">
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <nav aria-label="Page navigation">
+          <ul class="pagination">
+            <li class="page-item disabled"><a class="page-link" href="#">Previous</a></li>
+            <li class="page-item active"><a class="page-link" href="#">1</a></li>
+            <li class="page-item"><a class="page-link" href="#">2</a></li>
+            <li class="page-item"><a class="page-link" href="#">3</a></li>
+            <li class="page-item"><a class="page-link" href="#">Next</a></li>
+          </ul>
+        </nav>
+
+      </div>
+    </main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="responsabilidad_civil container">
+    <h3>Descargo de responsabilidad civil</h3>
+    <p>La información contenida en este sitio web es una mera interpretación personal de ciertos aspectos de la montaña y de algunos de los 
+      deportes que se practican en ella, así como una recolección de información y vivencias personales; nunca debe ser considerado como
+      un manual de conducta. Es responsabilidad de cada persona formarse con personal cualificado, leer las instrucciones del material y
+      conocer de antemano cómo utilizar el material de seguridad. Ante cualquier problema de salud, asistir a un profesional y no tomar la 
+      información de esta página web como sustitutivo. Por todo esto, no nos hacemos responsables de las consecuencias de los contenidos que
+      aquí aparecen.
+    </p>
 </div>
-
-<main class="container">
-  <div class="p-4 p-md-5 mb-4 text-white rounded bg-dark">
-    <div class="col-md-6 px-0">
-      <h1 class="display-4 fst-italic">Title of a longer featured blog post</h1>
-      <p class="lead my-3">Multiple lines of text that form the lede, informing new readers quickly and efficiently about what’s most interesting in this post’s contents.</p>
-      <p class="lead mb-0"><a href="#" class="text-white fw-bold">Continue reading...</a></p>
-    </div>
-  </div>
-
-  <div class="row mb-2">
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-primary">World</strong>
-          <h3 class="mb-0">Featured post</h3>
-          <div class="mb-1 text-muted">Nov 12</div>
-          <p class="card-text mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-        </div>
-      </div>
-    </div>
-    <div class="col-md-6">
-      <div class="row g-0 border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
-        <div class="col p-4 d-flex flex-column position-static">
-          <strong class="d-inline-block mb-2 text-success">Design</strong>
-          <h3 class="mb-0">Post title</h3>
-          <div class="mb-1 text-muted">Nov 11</div>
-          <p class="mb-auto">This is a wider card with supporting text below as a natural lead-in to additional content.</p>
-          <a href="#" class="stretched-link">Continue reading</a>
-        </div>
-        <div class="col-auto d-none d-lg-block">
-          <svg class="bd-placeholder-img" width="200" height="250" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-        </div>
-      </div>
-    </div>
-  </div>
-
-  <div class="row">
-    <div class="col-md-8">
-      <h3 class="pb-4 mb-4 fst-italic border-bottom">
-        From the Firehose
-      </h3>
-
-      <article class="blog-post">
-        <h2 class="blog-post-title">Sample blog post</h2>
-        <p class="blog-post-meta">January 1, 2014 by <a href="#">Mark</a></p>
-
-        <p>This blog post shows a few different types of content that’s supported and styled with Bootstrap. Basic typography, images, and code are all supported.</p>
-        <hr>
-        <p>Yeah, she dances to her own beat. Oh, no. You could've been the greatest. 'Cause, baby, <a href="#">you're a firework</a>. Maybe a reason why all the doors are closed. Open up your heart and just let it begin. So très chic, yeah, she's a classic.</p>
-        <blockquote>
-          <p>Bikinis, zucchinis, Martinis, no weenies. I know there will be sacrifice but that's the price. <strong>This is how we do it</strong>. I'm not sticking around to watch you go down. You think you're so rock and roll, but you're really just a joke. I know one spark will shock the world, yeah yeah. Can't replace you with a million rings.</p>
-        </blockquote>
-        <p>Trying to connect the dots, don't know what to tell my boss. Before you met me I was alright but things were kinda heavy. You just gotta ignite the light and let it shine. Glitter all over the room <em>pink flamingos</em> in the pool. </p>
-        <h2>Heading</h2>
-        <p>Suiting up for my crowning battle. If you only knew what the future holds. Bring the beat back. Peach-pink lips, yeah, everybody stares.</p>
-        <h3>Sub-heading</h3>
-        <p>You give a hundred reasons why, and you say you're really gonna try. Straight stuntin' yeah we do it like that. Calling out my name. ‘Cause I, I’m capable of anything.</p>
-        <pre><code>Example code block</code></pre>
-        <p>Before you met me I was alright but things were kinda heavy. You just gotta ignite the light and let it shine.</p>
-        <h3>Sub-heading</h3>
-        <p>You got the finest architecture. Passport stamps, she's cosmopolitan. Fine, fresh, fierce, we got it on lock. Never planned that one day I'd be losing you. She eats your heart out.</p>
-        <ul>
-          <li>Got a motel and built a fort out of sheets.</li>
-          <li>Your kiss is cosmic, every move is magic.</li>
-          <li>Suiting up for my crowning battle.</li>
-        </ul>
-        <p>Takes you miles high, so high, 'cause she’s got that one international smile.</p>
-        <ol>
-          <li>Scared to rock the boat and make a mess.</li>
-          <li>I could have rewrite your addiction.</li>
-          <li>I know you get me so I let my walls come down.</li>
-        </ol>
-        <p>After a hurricane comes a rainbow.</p>
-      </article><!-- /.blog-post -->
-
-      <article class="blog-post">
-        <h2 class="blog-post-title">Another blog post</h2>
-        <p class="blog-post-meta">December 23, 2013 by <a href="#">Jacob</a></p>
-
-        <p>I am ready for the road less traveled. Already <a href="#">brushing off the dust</a>. Yeah, you're lucky if you're on her plane. I used to bite my tongue and hold my breath. Uh, She’s a beast. I call her Karma (come back). Black ray-bans, you know she's with the band. I can't sleep let's run away and don't ever look back, don't ever look back.</p>
-        <blockquote>
-          <p>Growing fast into a <strong>bolt of lightning</strong>. Be careful Try not to lead her on</p>
-        </blockquote>
-        <p>I'm intrigued, for a peek, heard it's fascinating. Oh oh! Wanna be a victim ready for abduction. She's got that international smile, oh yeah, she's got that one international smile. Do you ever feel, feel so paper thin. I’m gon’ put her in a coma. Sun-kissed skin so hot we'll melt your popsicle.</p>
-        <p>This is transcendental, on another level, boy, you're my lucky star.</p>
-      </article><!-- /.blog-post -->
-
-      <article class="blog-post">
-        <h2 class="blog-post-title">New feature</h2>
-        <p class="blog-post-meta">December 14, 2013 by <a href="#">Chris</a></p>
-
-        <p>From Tokyo to Mexico, to Rio. Yeah, you take me to utopia. I'm walking on air. We'd make out in your Mustang to Radiohead. I mean the ones, I mean like she's the one. Sun-kissed skin so hot we'll melt your popsicle. Slow cooking pancakes for my boy, still up, still fresh as a Daisy.</p>
-        <ul>
-          <li>I hope you got a healthy appetite.</li>
-          <li>You're never gonna be unsatisfied.</li>
-          <li>Got a motel and built a fort out of sheets.</li>
-        </ul>
-        <p>Don't need apologies. Boy, you're an alien your touch so foreign, it's <em>supernatural</em>, extraterrestrial. Talk about our future like we had a clue. I can feel a phoenix inside of me.</p>
-      </article><!-- /.blog-post -->
-
-      <nav class="blog-pagination" aria-label="Pagination">
-        <a class="btn btn-outline-primary" href="#">Older</a>
-        <a class="btn btn-outline-secondary disabled" href="#" tabindex="-1" aria-disabled="true">Newer</a>
-      </nav>
-
-    </div>
-
-    <div class="col-md-4">
-      <div class="p-4 mb-3 bg-light rounded">
-        <h4 class="fst-italic">About</h4>
-        <p class="mb-0">Saw you downtown singing the Blues. Watch you circle the drain. Why don't you let me stop by? Heavy is the head that <em>wears the crown</em>. Yes, we make angels cry, raining down on earth from up above.</p>
-      </div>
-
-      <div class="p-4">
-        <h4 class="fst-italic">Archives</h4>
-        <ol class="list-unstyled mb-0">
-          <li><a href="#">March 2014</a></li>
-          <li><a href="#">February 2014</a></li>
-          <li><a href="#">January 2014</a></li>
-          <li><a href="#">December 2013</a></li>
-          <li><a href="#">November 2013</a></li>
-          <li><a href="#">October 2013</a></li>
-          <li><a href="#">September 2013</a></li>
-          <li><a href="#">August 2013</a></li>
-          <li><a href="#">July 2013</a></li>
-          <li><a href="#">June 2013</a></li>
-          <li><a href="#">May 2013</a></li>
-          <li><a href="#">April 2013</a></li>
-        </ol>
-      </div>
-
-      <div class="p-4">
-        <h4 class="fst-italic">Elsewhere</h4>
-        <ol class="list-unstyled">
-          <li><a href="#">GitHub</a></li>
-          <li><a href="#">Twitter</a></li>
-          <li><a href="#">Facebook</a></li>
-        </ol>
-      </div>
-    </div>
-
-  </div><!-- /.row -->
-
-</main><!-- /.container -->
-
-<footer class="blog-footer">
-  <p>Blog template built for <a href="https://getbootstrap.com/">Bootstrap</a> by <a href="https://twitter.com/mdo">@mdo</a>.</p>
-  <p>
-    <a href="#">Back to top</a>
-  </p>
 </footer>
 
 

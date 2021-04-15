@@ -1,0 +1,108 @@
+/* ################## PORTADA ################## */
+
+section.rutas-portada {
+    margin-bottom: 4rem;
+    height: 70vh;
+    /* height: 50rem; */
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(/assets/images/rutas/rutas_portada.jpg);
+    background-position: center center;
+    background-size: cover;
+    background-repeat: no-repeat;
+
+    color: white;
+    display: flex;
+    justify-content: center;
+}
+
+section.rutas-portada .container {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+section.rutas-portada h1 {
+    font-size: bold;
+    margin-bottom: 5rem;
+    margin-top: 5rem;
+    text-shadow: 4px 4px #262626;
+    background: radial-gradient(circle, rgba(38,38,38,0.5) 0%, rgba(38,38,38,0) 100%);
+    border-radius: 5px;
+}
+
+section.rutas-portada p.lead {
+    padding: 2rem;
+    background: radial-gradient(circle, rgba(38,38,38,0.5) 0%, rgba(38,38,38,0) 100%); /* #262626 */
+    border-radius: 10px;
+    backdrop-filter: blur(10px);
+}
+
+
+/* ################## SEARCH BAR ################## */
+
+.filtros {
+    background-color: #dcdcdc;
+    border: 2px solid #f5f5f5;
+    border-radius: 5px;;
+    padding: 2rem 1rem;
+}
+
+.filtros .search-post {
+    display: flex;
+    align-items: center;
+}
+
+.filtros .search-post svg {
+    margin-left: 0.5rem;
+    height: 2.2rem;
+    width: 2.2rem;
+    background-color: #02487c;
+    padding: 0.5rem;
+    border-radius: 4px;
+    fill: white;
+}
+
+.filtros .seleccion-zona {
+    margin-right: 1rem;
+}
+
+
+/* ################## POSTS ################## */
+.rutas .post > .row {
+    position: relative;
+    height: 300px;
+}
+
+.rutas .post img {
+    width: 200px;
+    height: 100%;
+    object-fit: cover;
+}
+
+/* .rutas .post a {
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    margin-bottom: 1.2rem;
+    margin-left: 1.5rem;
+} */
+
+.rutas .post .post-zona {
+    display: flex;
+    align-items: center;
+}
+
+.rutas .post .post-zona svg {
+    margin-right: 1rem;
+    width: 1rem;
+    height: 1rem;
+    fill: #3f3f3f;
+}
+
+.rutas .post .post-zona .pedriza {
+    color: #878176;
+}
+
+.rutas .post .post-zona .malagon {
+    color: #2ea33f;
+}
