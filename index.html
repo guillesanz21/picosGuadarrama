@@ -37,6 +37,7 @@
     
     <!-- Mis estilos -->
     <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/index.css">
   </head>
   <body>
     
@@ -78,147 +79,178 @@
 
 <main>
 
-  <div id="myCarousel" class="carousel slide" data-bs-ride="carousel">
-    <div class="carousel-indicators">
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="0" class="active" aria-current="true" aria-label="Slide 1"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="1" aria-label="Slide 2"></button>
-      <button type="button" data-bs-target="#myCarousel" data-bs-slide-to="2" aria-label="Slide 3"></button>
-    </div>
-    <div class="carousel-inner">
-      <div class="carousel-item active">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-start">
-            <h1>Example headline.</h1>
-            <p>Some representative placeholder content for the first slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Sign up today</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption">
-            <h1>Another example headline.</h1>
-            <p>Some representative placeholder content for the second slide of the carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Learn more</a></p>
-          </div>
-        </div>
-      </div>
-      <div class="carousel-item">
-        <svg class="bd-placeholder-img" width="100%" height="100%" xmlns="http://www.w3.org/2000/svg" aria-hidden="true" preserveAspectRatio="xMidYMid slice" focusable="false"><rect width="100%" height="100%" fill="#777"/></svg>
-
-        <div class="container">
-          <div class="carousel-caption text-end">
-            <h1>One more for good measure.</h1>
-            <p>Some representative placeholder content for the third slide of this carousel.</p>
-            <p><a class="btn btn-lg btn-primary" href="#">Browse gallery</a></p>
-          </div>
-        </div>
+  <section class="front-presentation">
+    <div class="container">
+      <img src="assets/images/logo-original-gray.png" alt="logo Los Picos de Guadarrama">
+      <h1 class="display-1 text-center">Los Picos de Guadarrama</h1>
+      <p class="lead text-center d-none d-sm-flex">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+        debitis necessitatibus, excepturi officia iure. Deserunt, id! Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+        debitis necessitatibus, excepturi officia iure. Deserunt, id!
+      </p>
+      <div class="scroll-down">
+        <p>Navega por nuestra web!</p>
+        <svg xmlns="http://www.w3.org/2000/svg" fill="currentColor" class="bi bi-arrow-bar-down" viewBox="0 0 16 16">
+          <path fill-rule="evenodd" d="M1 3.5a.5.5 0 0 1 .5-.5h13a.5.5 0 0 1 0 1h-13a.5.5 0 0 1-.5-.5zM8 6a.5.5 0 0 1 .5.5v5.793l2.146-2.147a.5.5 0 0 1 .708.708l-3 3a.5.5 0 0 1-.708 0l-3-3a.5.5 0 0 1 .708-.708L7.5 12.293V6.5A.5.5 0 0 1 8 6z"/>
+        </svg>
       </div>
     </div>
-    <button class="carousel-control-prev" type="button" data-bs-target="#myCarousel" data-bs-slide="prev">
-      <span class="carousel-control-prev-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Previous</span>
-    </button>
-    <button class="carousel-control-next" type="button" data-bs-target="#myCarousel" data-bs-slide="next">
-      <span class="carousel-control-next-icon" aria-hidden="true"></span>
-      <span class="visually-hidden">Next</span>
-    </button>
-  </div>
+  </section>
 
 
   <!-- Marketing messaging and featurettes
   ================================================== -->
   <!-- Wrap the rest of the page in another container to center all the content. -->
 
-  <div class="container marketing">
+  <section class="container marketing">
 
-    <!-- Three columns of text below the carousel -->
-    <div class="row">
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+    <article class="secciones">
+      <!-- Three columns of text -->
+      <div class="row">
+        <div class="col-lg-4 section">
+          <img class="bd-placeholder-img rounded-circle" src="assets/images/home/seccion_rutas.jpg" alt="Imagen de una persona sujetando un mapa" focusable="false" />
+          <h2>Rutas</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+            debitis necessitatibus, excepturi officia iure. </p>
+          <p><a class="btn btn-secondary" href="rutas.html">Ver sección &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
 
-        <h2>Heading</h2>
-        <p>Some representative placeholder content for the three columns of text below the carousel. This is the first column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <div class="col-lg-4 section">
+          <img class="bd-placeholder-img rounded-circle" src="assets/images/home/seccion_blog.jpg" alt="Una persona escribiendo en un portatil" focusable="false" />
+          <h2>Blog</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+            debitis necessitatibus, excepturi officia iure. </p>
+          <p><a class="btn btn-secondary disabled" href="#">Ver sección &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
 
-        <h2>Heading</h2>
-        <p>Another exciting bit of representative placeholder content. This time, we've moved on to the second column.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-      <div class="col-lg-4">
-        <svg class="bd-placeholder-img rounded-circle" width="140" height="140" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 140x140" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#777"/><text x="50%" y="50%" fill="#777" dy=".3em">140x140</text></svg>
+        <div class="col-lg-4 section">
+          <img class="bd-placeholder-img rounded-circle" src="assets/images/home/seccion_sierra.jpg" alt="La Bola del Mundo, en la Sierra de Guadarrama" focusable="false" />
+          <h2>Sierra de Guadarrama</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+            debitis necessitatibus, excepturi officia iure. </p>
+          <p><a class="btn btn-secondary" href="sierra.html">Ver sección &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
 
-        <h2>Heading</h2>
-        <p>And lastly this, the third column of representative placeholder content.</p>
-        <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-      </div><!-- /.col-lg-4 -->
-    </div><!-- /.row -->
+      <!-- Three columns -->
+      <div class="row">
+        <div class="col-lg-4 section">
+          <img class="bd-placeholder-img rounded-circle" src="assets/images/home/seccion_intro.jpg" alt="Imagen de una mujer andando en la montaña" focusable="false" />
+          <h2>Introducción</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+            debitis necessitatibus, excepturi officia iure. </p>
+          <p><a class="btn btn-secondary disabled" href="#">Ver sección &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
 
+        <div class="col-lg-4 section">
+          <img class="bd-placeholder-img rounded-circle" src="assets/images/home/seccion_equipamiento.jpg" alt="Imagen de una persona escalando" focusable="false" />
+          <h2>Material y equipamiento</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+            debitis necessitatibus, excepturi officia iure. </p>
+          <p><a class="btn btn-secondary disabled" href="#">Ver sección &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+
+        <div class="col-lg-4 section">
+          <img class="bd-placeholder-img rounded-circle" src="assets/images/home/seccion_salud.jpg" alt="Imagen de una persona mirando un smartwatch" focusable="false" />
+          <h2>Salud</h2>
+          <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Sapiente cupiditate tempore pariatur est libero saepe, a cum dignissimos eum quod veniam, et dolorem 
+            debitis necessitatibus, excepturi officia iure. </p>
+          <p><a class="btn btn-secondary disabled" href="#">Ver sección &raquo;</a></p>
+        </div><!-- /.col-lg-4 -->
+      </div><!-- /.row -->
+    </article>
+  
 
     <!-- START THE FEATURETTES -->
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
+    <article class="row featurette authors">
       <div class="col-md-7">
-        <h2 class="featurette-heading">First featurette heading. <span class="text-muted">It’ll blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting prose here.</p>
+        <h2 class="featurette-heading">¿Quiénes somos?</h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, itaque asperiores natus, quisquam ea deserunt officiis nisi dolores iure nulla minima, 
+          officia dicta! Sit ad doloremque aperiam enim quas cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, itaque asperiores natus, quisquam ea deserunt officiis nisi dolores iure nulla minima, 
+          officia dicta! Sit ad doloremque aperiam enim quas cumque!
+        </p>
       </div>
       <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/images/home/home_quienes-somos.jpg" alt="Foto de las personas que hay detrás de la web" focusable="false">
       </div>
-    </div>
+    </article>
 
     <hr class="featurette-divider">
 
-    <div class="row featurette">
+    <article class="row featurette sierra_guadarrama">
       <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading">Oh yeah, it’s that good. <span class="text-muted">See for yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of how this layout would work with some actual real-world content in place.</p>
+        <h2 class="featurette-heading">La Sierra de Guadarrama. <span class="text-muted">Un mundo propio.</span></h2>
+        <p class="lead">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, itaque asperiores natus, quisquam ea deserunt officiis nisi dolores iure nulla minima, 
+          officia dicta! Sit ad doloremque aperiam enim quas cumque! Lorem ipsum dolor sit amet consectetur adipisicing elit. Culpa, itaque asperiores natus, quisquam ea deserunt officiis nisi dolores iure nulla minima, 
+          officia dicta! Sit ad doloremque aperiam enim quas cumque!
+        </p>
       </div>
       <div class="col-md-5 order-md-1">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
+        <img class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" src="assets/images/home/home_sierra_guadarrama.jpg" alt="Unas vacas tumbadas rumiando" focusable="false">
       </div>
-    </div>
-
-    <hr class="featurette-divider">
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading">And lastly, this one. <span class="text-muted">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not really intended to be actually read, simply here to give you a better view of what this would look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5">
-        <svg class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" width="500" height="500" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: 500x500" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#eee"/><text x="50%" y="50%" fill="#aaa" dy=".3em">500x500</text></svg>
-
-      </div>
-    </div>
+    </article>
 
     <hr class="featurette-divider">
 
     <!-- /END THE FEATURETTES -->
 
-  </div><!-- /.container -->
+  </section><!-- /.container -->
 
-
-  <!-- FOOTER -->
-  <footer class="container">
-    <p class="float-end"><a href="#">Back to top</a></p>
-    <p>&copy; 2017–2021 Company, Inc. &middot; <a href="#">Privacy</a> &middot; <a href="#">Terms</a></p>
-  </footer>
+  <section class="contact container">
+    <h2 class="display-3 text-center">¿Tienes alguna duda o sugerencia?</h2>
+    <p class="lead text-center">Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sequi sit maiores asperiores soluta ducimus sed corrupti minima molestias modi similique nulla odio, deserunt natus eaque rem incidunt molestiae debitis placeat?</p>
+    <form class="row g-3 contact-form">
+      <div class="col-md-6">
+        <label for="name" class="form-label">Nombre</label>
+        <input type="text" class="form-control" id="name" placeholder="Introduzca su nombre por favor...">
+      </div>
+      <div class="col-md-6">
+        <label for="inputEmail4" class="form-label">Email</label>
+        <input type="email" class="form-control" id="inputEmail4" placeholder="Introduzca su email por favor..." required>
+      </div>
+      <div class="col-12">
+        <label for="subject" class="form-label">¿Qué nos quieres comentar o preguntar?</label>
+        <input type="text" class="form-control" id="subject" placeholder="Introduzca el motivo del mensaje" required>
+      </div>
+      <div class="col-12">
+        <label for="message" class="form-label">¿Qué nos quieres comentar o preguntar?</label>
+        <textarea rows="10" cols="500" class="form-control" id="message" placeholder="Escriba su duda o sugerencia aquí"></textarea>
+      </div>
+      <div class="col-12 send_msg">
+        <button type="submit" class="btn btn-primary">Enviar mensaje!</button>
+      </div>
+    </form>
+  </section>
 </main>
+
+<!-- FOOTER -->
+<footer>
+  <div class="responsabilidad_civil container">
+    <h3>Descargo de responsabilidad civil</h3>
+    <p>La información contenida en este sitio web es una mera interpretación personal de ciertos aspectos de la montaña y de algunos de los 
+      deportes que se practican en ella, así como una recolección de información y vivencias personales; nunca debe ser considerado como
+      un manual de conducta. Es responsabilidad de cada persona formarse con personal cualificado, leer las instrucciones del material y
+      conocer de antemano cómo utilizar el material de seguridad. Ante cualquier problema de salud, asistir a un profesional y no tomar la 
+      información de esta página web como sustitutivo. Por todo esto, no nos hacemos responsables de las consecuencias de los contenidos que
+      aquí aparecen.
+    </p>
+</div>
+</footer>
+
 
 
   <script src="https://getbootstrap.com/docs/5.0/dist/js/bootstrap.bundle.min.js"></script>
+  <!-- JQuery -->
+  <script
+    src="https://code.jquery.com/jquery-3.6.0.min.js"
+    integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4="
+    crossorigin="anonymous">
+  </script>
+  <script src="assets/js/index.js"></script>
 
       
   </body>

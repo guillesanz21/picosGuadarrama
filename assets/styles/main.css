@@ -4,6 +4,11 @@ Colores:
  - Azules: #172b44 / #02487c / #0768b2 / #42b3eb / #95daf0
 */
 
+body, html {
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 /* ################## NAVBAR  ################## */
 
 nav.navbar a.navbar-brand {
@@ -29,4 +34,23 @@ nav.navbar .action-buttons a {
 nav.navbar a.nav-link.active  {
     background-color: #02487c;
     border-radius: 5px;
+}
+
+
+/* ################## RESPONSABILIDAD CIVIL ################## */
+footer {
+    margin-top: 8rem;
+    margin-bottom: 0;
+    background-color: #262626;
+    color: white;
+}
+
+footer .responsabilidad_civil {
+    padding: 2rem 0;
+}
+
+footer .responsabilidad_civil > p {
+    color: #dcdcdc;
+    margin-top: 1.5rem;
+    margin-bottom: 0;
 }
