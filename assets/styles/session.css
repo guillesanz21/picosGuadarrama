@@ -1,0 +1,9 @@
+.form-signin img.logo {
+    width: 10rem;
+    object-fit: cover;
+}
+
+.form-signin button[type=submit].btn {
+    background-color: #0768b2;
+}
+

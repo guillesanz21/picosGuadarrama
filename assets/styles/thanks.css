@@ -1,0 +1,30 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #dcdcdc;
+}
+
+.thanks-title {
+    background-color: white;
+    text-align: center;
+    padding: 4rem;
+    margin-bottom: 8rem;
+}
+
+.thanks-text {
+    background-color: white;
+    padding: 3rem;
+    border-radius: 5px;
+    display: flex;
+    flex-direction: column;
+}
+
+.thanks-text h2 {
+    margin-bottom: 2rem;
+}
+
+.thanks-text .btn {
+    align-self: center;
+    margin-top: 1rem;
+    background-color: #0768b2;
+}

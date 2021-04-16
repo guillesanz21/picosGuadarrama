@@ -37,6 +37,7 @@
     
     <!-- Mis estilos -->
     <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/session.css">
 
   </head>
   <body class="text-center">
@@ -78,26 +79,30 @@
     </header>
     
 <main class="form-signin">
-  <form>
-    <img class="mb-4" src="../assets/brand/bootstrap-logo.svg" alt="" width="72" height="57">
-    <h1 class="h3 mb-3 fw-normal">Please sign in</h1>
+  <form class="sign-up" action="/index.html" method="GET">
+    <img class="mb-4 logo" src="assets/images/logo-original-transparent.png" alt="Logo">
+    <h1 class="display-5 mb-4 fw-normal">Crear cuenta</h1>
+    <p class="lead text-muted mb-4">Introduzca los siguientes datos para crear una cuenta:</p>
 
-    <div class="form-floating">
-      <input type="email" class="form-control" id="floatingInput" placeholder="name@example.com">
-      <label for="floatingInput">Email address</label>
+    <div class="form-floating mb-1">
+      <input type="email" class="form-control" id="floatingInput" name="email" placeholder="name@example.com" required>
+      <label for="floatingInput">Email</label>
     </div>
-    <div class="form-floating">
-      <input type="password" class="form-control" id="floatingPassword" placeholder="Password">
-      <label for="floatingPassword">Password</label>
+    <div class="form-floating mb-1">
+      <input type="text" class="form-control" id="floatingText" name="name" placeholder="Nombre" required>
+      <label for="floatingText">Nombre de usuario</label>
     </div>
-
-    <div class="checkbox mb-3">
-      <label>
-        <input type="checkbox" value="remember-me"> Remember me
-      </label>
+    <div class="form-floating mb-1">
+      <input type="password" class="form-control" id="floatingPassword" name="password" placeholder="Contraseña" required>
+      <label for="floatingPassword">Constraseña</label>
     </div>
-    <button class="w-100 btn btn-lg btn-primary" type="submit">Sign in</button>
-    <p class="mt-5 mb-3 text-muted">&copy; 2017–2021</p>
+    <div class="form-floating mb-3">
+      <input type="password" class="form-control" id="floatingConfirmPassword" placeholder="Repita contraseña" required>
+      <label for="floatingConfirmPassword">Repita la constraseña</label>
+    </div>
+    
+    <button class="w-100 btn btn-lg btn-primary" type="submit">Crear cuenta</button>
+    <p class="mt-5 mb-3 text-muted">&copy; Desde 2021</p>
   </form>
 </main>
 
