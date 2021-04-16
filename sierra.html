@@ -34,6 +34,7 @@
     
     <!-- Mis estilos -->
     <link rel="stylesheet" type="text/css" href="assets/styles/main.css">
+    <link rel="stylesheet" type="text/css" href="assets/styles/sierra.css">
 
   </head>
   <body>
@@ -76,183 +77,280 @@
 
 <main>
 
-  <section class="py-5 text-center container">
-    <div class="row py-lg-5">
-      <div class="col-lg-6 col-md-8 mx-auto">
-        <h1 class="fw-light">Album example</h1>
-        <p class="lead text-muted">Something short and leading about the collection below—its contents, the creator, etc. Make it short and sweet, but not too short so folks don’t simply skip over it entirely.</p>
-        <p>
-          <a href="#" class="btn btn-primary my-2">Main call to action</a>
-          <a href="#" class="btn btn-secondary my-2">Secondary action</a>
-        </p>
-      </div>
+  <section class="sierra-portada">
+    <div class="container">
+      <h1 class="display-2 text-center">La Sierra de Guadarrama</h1>
+      <p class="lead text-center d-none d-sm-flex">
+        Descubre todas las zonas de la Sierra de Guadarrama en esta sección, ¡desde las zonas más conocidas hasta
+        las zonas más recónditas! 
+        <br>
+        La Sierra de Guadarrama es un espacio protegido con una gran variedad de paisajes, donde trataremos de recorrerlos todos y enseñarnos 
+        nuestras vivencias y sensaciones. 
+      </p>
     </div>
   </section>
 
-  <div class="album py-5 bg-light">
+  
+
+  <div class="album bg-light">
     <div class="container">
 
-      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3">
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
+      <section class="map">
+        <iframe frameborder = "0" style = "border:0" src ="http://www.ign.es/iberpix2/visor/?&x=-436879.00&y=4986383.00&level=11&srid=3857&visible=MTN;" >
+        </iframe>
+      </section>
 
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+      <div class="row row-cols-1 row-cols-sm-2 row-cols-md-3 g-3 zonas">
+
+
+        <div class="col zona">
+          <div class="card flip-card shadow-sm">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/sierra/pedriza/sierra_pedriza_sm.jpg" alt="El Yelmo">
+                <div class="card-body">
+                  <h3 class="text-center">La Pedriza</h3>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              <div class="flip-card-back">
+                <p class="card-text">
+                  La Pedriza es una zona casi únicamente rocosa, preciosa por su variedad de formas de piedras y considerada un parque de atracciones
+                  para los escaladores.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group mb-4">
+                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary disabled">Edit</button>
+                  </div>
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+        <div class="col zona">
+          <div class="card flip-card shadow-sm">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/sierra/malagon/sierra_malagon_sm.jpg" alt="El Pico del Fraile">
+                <div class="card-body">
+                  <h3 class="text-center">Sierra de Malagón</h3>
                 </div>
-                <small class="text-muted">9 mins</small>
               </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+              <div class="flip-card-back">
+                <p class="card-text">
+                  La Sierra de Malagón se posiciona al sur del puerto de Guadarrama y presenta una gran cantidad de 
+                  vegetación. Toda esta zona contiene una gran cantidad de elementos históricos, como varios bunkers de la Guerra Civil Española
+                  o la Silla de Felipe II.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group mb-4">
+                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary disabled">Edit</button>
+                  </div>
                 </div>
-                <small class="text-muted">9 mins</small>
-              </div>
-            </div>
-          </div>
-        </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
-                </div>
-                <small class="text-muted">9 mins</small>
               </div>
             </div>
           </div>
         </div>
 
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
-
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+        <div class="col zona">
+          <div class="card flip-card shadow-sm">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/sierra/cotos/sierra_cotos_sm.jpg" alt="El Yelmo">
+                <div class="card-body">
+                  <h3 class="text-center">Cotos</h3>
                 </div>
-                <small class="text-muted">9 mins</small>
+              </div>
+              <div class="flip-card-back">
+                <p class="card-text">
+                  La zona que contiene el pico más alto de la Sierra de Guadarrama: Peñalara. Una zona muy variada,
+                  con mucho bosque, pero también roca. Una zona que hay que visitar sí o sí.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group mb-4">
+                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary disabled">Edit</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+
+        <div class="col zona">
+          <div class="card flip-card shadow-sm">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/sierra/pedriza/sierra_pedriza_sm.jpg" alt="El Yelmo">
+                <div class="card-body">
+                  <h3 class="text-center">La Pedriza</h3>
                 </div>
-                <small class="text-muted">9 mins</small>
+              </div>
+              <div class="flip-card-back">
+                <p class="card-text">
+                  La Pedriza es una zona casi únicamente rocosa, preciosa por su variedad de formas de piedras y considerada un parque de atracciones
+                  para los escaladores.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group mb-4">
+                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary disabled">Edit</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
-        <div class="col">
-          <div class="card shadow-sm">
-            <svg class="bd-placeholder-img card-img-top" width="100%" height="225" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Placeholder: Thumbnail" preserveAspectRatio="xMidYMid slice" focusable="false"><title>Placeholder</title><rect width="100%" height="100%" fill="#55595c"/><text x="50%" y="50%" fill="#eceeef" dy=".3em">Thumbnail</text></svg>
 
-            <div class="card-body">
-              <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
-              <div class="d-flex justify-content-between align-items-center">
-                <div class="btn-group">
-                  <button type="button" class="btn btn-sm btn-outline-secondary">View</button>
-                  <button type="button" class="btn btn-sm btn-outline-secondary">Edit</button>
+        <div class="col zona">
+          <div class="card flip-card shadow-sm">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/sierra/malagon/sierra_malagon_sm.jpg" alt="El Pico del Fraile">
+                <div class="card-body">
+                  <h3 class="text-center">Sierra de Malagón</h3>
                 </div>
-                <small class="text-muted">9 mins</small>
+              </div>
+              <div class="flip-card-back">
+                <p class="card-text">
+                  La Sierra de Malagón se posiciona al sur del puerto de Guadarrama y presenta una gran cantidad de 
+                  vegetación. Toda esta zona contiene una gran cantidad de elementos históricos, como varios bunkers de la Guerra Civil Española
+                  o la Silla de Felipe II.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group mb-4">
+                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary disabled">Edit</button>
+                  </div>
+                </div>
               </div>
             </div>
           </div>
         </div>
+
+        <div class="col zona">
+          <div class="card flip-card shadow-sm">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/sierra/cotos/sierra_cotos_sm.jpg" alt="El Yelmo">
+                <div class="card-body">
+                  <h3 class="text-center">Cotos</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p class="card-text">
+                  La zona que contiene el pico más alto de la Sierra de Guadarrama: Peñalara. Una zona muy variada,
+                  con mucho bosque, pero también roca. Una zona que hay que visitar sí o sí.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group mb-4">
+                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary disabled">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+
+        <div class="col zona">
+          <div class="card flip-card shadow-sm">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/sierra/pedriza/sierra_pedriza_sm.jpg" alt="El Yelmo">
+                <div class="card-body">
+                  <h3 class="text-center">La Pedriza</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p class="card-text">
+                  La Pedriza es una zona casi únicamente rocosa, preciosa por su variedad de formas de piedras y considerada un parque de atracciones
+                  para los escaladores.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group mb-4">
+                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary disabled">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col zona">
+          <div class="card flip-card shadow-sm">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/sierra/malagon/sierra_malagon_sm.jpg" alt="El Pico del Fraile">
+                <div class="card-body">
+                  <h3 class="text-center">Sierra de Malagón</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p class="card-text">
+                  La Sierra de Malagón se posiciona al sur del puerto de Guadarrama y presenta una gran cantidad de 
+                  vegetación. Toda esta zona contiene una gran cantidad de elementos históricos, como varios bunkers de la Guerra Civil Española
+                  o la Silla de Felipe II.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group mb-4">
+                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary disabled">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="col zona">
+          <div class="card flip-card shadow-sm">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <img src="assets/images/sierra/cotos/sierra_cotos_sm.jpg" alt="El Yelmo">
+                <div class="card-body">
+                  <h3 class="text-center">Cotos</h3>
+                </div>
+              </div>
+              <div class="flip-card-back">
+                <p class="card-text">
+                  La zona que contiene el pico más alto de la Sierra de Guadarrama: Peñalara. Una zona muy variada,
+                  con mucho bosque, pero también roca. Una zona que hay que visitar sí o sí.
+                </p>
+                <div class="d-flex justify-content-center align-items-center">
+                  <div class="btn-group mb-4">
+                    <button type="button" class="btn btn-sm btn-primary">View</button>
+                    <button type="button" class="btn btn-sm btn-outline-primary disabled">Edit</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
       </div>
     </div>
   </div>
 
 </main>
 
-<footer class="text-muted py-5">
-  <div class="container">
-    <p class="float-end mb-1">
-      <a href="#">Back to top</a>
+<!-- FOOTER -->
+<footer>
+  <div class="responsabilidad_civil container">
+    <h3>Descargo de responsabilidad civil</h3>
+    <p>La información contenida en este sitio web es una mera interpretación personal de ciertos aspectos de la montaña y de algunos de los 
+      deportes que se practican en ella, así como una recolección de información y vivencias personales; nunca debe ser considerado como
+      un manual de conducta. Es responsabilidad de cada persona formarse con personal cualificado, leer las instrucciones del material y
+      conocer de antemano cómo utilizar el material de seguridad. Ante cualquier problema de salud, asistir a un profesional y no tomar la 
+      información de esta página web como sustitutivo. Por todo esto, no nos hacemos responsables de las consecuencias de los contenidos que
+      aquí aparecen.
     </p>
-    <p class="mb-1">Album example is &copy; Bootstrap, but please download and customize it for yourself!</p>
-    <p class="mb-0">New to Bootstrap? <a href="/">Visit the homepage</a> or read our <a href="../getting-started/introduction/">getting started guide</a>.</p>
-  </div>
+</div>
 </footer>
 
 
