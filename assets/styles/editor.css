@@ -1,0 +1,38 @@
+body {
+    padding-top: 3rem;
+    padding-bottom: 3rem;
+    background-color: #dcdcdc;
+}
+
+.create-header {
+    margin-top: 3rem;
+    padding: 2rem;
+    background-color: white;
+    border-radius: 5px;
+}
+
+.create-header h1 {
+    margin-bottom: 1.5rem;
+}
+
+.newPost .addon-fields, .ruta-body {
+    background-color: white;
+    margin: 0.1rem;
+    border-radius: 5px;
+    padding: 2rem 1rem;
+    color: #262626;
+    margin-bottom: 1rem;
+}
+
+textarea#tinyeditor {
+    height: 90vh;
+}
+
+.submit {
+    display: flex;
+    justify-content: center;
+}
+.submit input[type=submit].btn {
+    background-color: #0768b2;
+    width: 20rem;
+}
