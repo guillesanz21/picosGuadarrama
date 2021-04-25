@@ -4,7 +4,7 @@ section.rutas-portada {
     margin-bottom: 4rem;
     height: 70vh;
     /* height: 50rem; */
-    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(/assets/images/rutas/rutas_portada.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.1)), url(/assets/images/rutas/rutas_portada.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;

@@ -4,7 +4,7 @@ section.front-presentation {
     margin-bottom: 4rem;
     height: 97vh;
     /* height: 50rem; */
-    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(/assets/images/home/home_front-large.jpg);
+    background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.4)), url(/assets/images/home/home_front-large.jpeg);
     background-position: center center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -29,7 +29,7 @@ section.front-presentation img {
 
 section.front-presentation h1 {
     font-size: bold;
-    margin-bottom: 8rem;
+    margin-bottom: 5rem;
     margin-top: 5rem;
     text-shadow: 4px 4px #262626;
     background: radial-gradient(circle, rgba(38,38,38,0.7) 0%, rgba(38,38,38,0.2) 100%);
@@ -38,7 +38,7 @@ section.front-presentation h1 {
 
 section.front-presentation p.lead {
     padding: 2rem;
-    margin-bottom: 4rem;
+    margin-bottom: 3rem;
     background: radial-gradient(circle, rgba(38,38,38,1) 0%, rgba(38,38,38,0.2) 100%); /* #262626 */
     border-radius: 10px;
     backdrop-filter: blur(10px);
