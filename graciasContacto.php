@@ -10,7 +10,7 @@
 <body>
 <?php
 define("RECIPIENT_NAME", "Los Picos de Guadarrama");
-define("RECIPIENT_ADDRESS", "guillermo.sanz.gonzalez@alumnos.upm.es");
+define("RECIPIENT_ADDRESS", "email_prueba");
 $senderEmail = $_POST['email'];
 $senderName = $_POST['name'];
 $subject = $_POST['subject'];

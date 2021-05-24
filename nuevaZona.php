@@ -1,3 +1,7 @@
+<?php 
+require_once("./services/restringido.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +22,7 @@
               <p class="lead text-muted">Rellene los siguientes campos para poder crear una zona nueva</p>
           </section>
 
-          <form class="create-body" action="postZona.php" method="POST" enctype="multipart/form-data">
+          <form class="create-body" action="services/postZona.php" method="POST" enctype="multipart/form-data">
               <article class="addon-fields row mt-5">
                 <div class="col-12 mb-3">
                     <label for="nombre" class="form-label"><h5>Zona: (*)</h5></label>
@@ -34,6 +38,13 @@
                   <div class="form-group">
                     <label for="foto-portada" class="col-form-label"><h5>Elegir imagen para la portada (*)</h5></label>
                     <input class="form-control" type="file" id="foto-portada" name="foto-portada" required>
+                  </div>
+                </div>
+                <!-- New row -->
+                <div class="col-12 mb-3">
+                  <div class="form-group">
+                    <label for="acronimo" class="col-form-label"><h5>Elegir un acrónimo (sin espacios ni mayúsculas ni acentos) (*)</h5></label>
+                    <input class="form-control" type="text" id="acronimo" name="acronimo" placeholder="Máximo 25 caracteres" maxlength="25" required>
                   </div>
                 </div>
               </article>

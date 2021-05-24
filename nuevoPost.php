@@ -1,3 +1,7 @@
+<?php 
+require_once("./services/restringido.php");
+?>
+
 <!DOCTYPE html>
 <html lang="en">
   <head>
@@ -18,7 +22,7 @@
               <p class="lead text-muted">Rellene los siguientes campos para poder crear una ruta nueva</p>
           </section>
 
-          <form class="create-body" method="POST">
+          <form class="create-body" action="services/postRuta.php" method="POST" enctype="multipart/form-data">
               <article class="addon-fields row mt-5">
                 <div class="col-12 mb-3">
                     <label for="nombre" class="form-label"><h5>Nombre de la ruta (*)</h5></label>
@@ -40,9 +44,6 @@
                     <label for="zona" class="col-form-label"><h5>Zona</h5></label>
                     <select id="zona" class="form-select" name="zona" aria-label="Selección de la zona">
                         <option selected></option>
-                        <option value="pedriza">La Pedriza</option>
-                        <option value="malagon">Sierra de Malagón</option>
-                        <option value="cotos">Cotos</option>
                     </select>
                 </div>
                 <div class="col-12 col-md-4 mb-3">
@@ -55,7 +56,7 @@
 
               <article class="ruta-body">
                   <h4>La ruta (*)</h4>
-                  <textarea id="tinyeditor"></textarea>
+                  <textarea id="tinyeditor" name="content"></textarea>
               </article>
               <article class="submit">
                 <input type="submit" value="Crear ruta" class="btn btn-primary" />
@@ -72,5 +73,19 @@
     <!-- Mis ficheros Javascript -->
     <script src="assets/js/editor.js"></script>
     <script src="assets/js/newPost.js"></script>
+
+    <script>
+      var url = window.location.pathname;
+      var dir = url.substring(0, url.lastIndexOf("/")); // url del servidor
+
+      $.getJSON(dir + "/services/sierrajson.php?callback=?", (data) => {
+      //$("#zona").html("");
+      $.each(data, (i, item) => {
+        $("#zona").append(`
+          <option value="${item.acronimo}">${item.nombre}</option>
+        `);
+      });
+    });
+  </script>
   </body>
 </html>

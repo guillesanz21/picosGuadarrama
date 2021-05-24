@@ -16,7 +16,7 @@
 </header>
 
 <main class="form-signin">
-    <form class="sign-in" action="/index.php" method="GET">
+    <form class="sign-in" action="/services/procesaLogin.php" method="POST" >
         <img class="mb-4 logo" src="assets/images/logo-original-transparent.png" alt="Logo">
         <h1 class="display-5 mb-4 fw-normal">Login</h1>
 
@@ -37,6 +37,16 @@
             </label>
         </div>
         <button class="w-100 btn btn-lg btn-primary" type="submit">Acceder</button>
+        <?php if (isset($_REQUEST['errorLogin'])): ?>
+            <div class="panel panel-danger" style="color: red;">
+                <div class="panel-heading">
+                    Error
+                </div>
+                <div class="panel-body">
+                    <p><?php echo "Nombre o contraseñas incorrectas"; ?></p>
+                </div>
+            </div>
+        <?php endif; ?>
         <p class="mt-5 mb-3 text-muted">&copy; Desde 2021</p>
     </form>
 </main>

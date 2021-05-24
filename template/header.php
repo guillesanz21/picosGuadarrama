@@ -24,10 +24,19 @@
                     </div>
                 </div>
             </div>
+            <?php 
+                session_start();
+                if(!isset($_SESSION['username'])) {
+            ?>
             <div class="navbar-nav ml-auto action-buttons">
                 <a class="nav-link btn btn-outline-primary" data-toggle="dropdown" href="signin.php">Login</a>
                 <a class="nav-link btn btn-primary" data-toggle="dropdown" href="signup.php">Sign up</a>
             </div>
+            <?php } else { ?>
+            <div class="navbar-nav ml-auto action-buttons">
+                <p class="text-light mt-2"><?php echo "Usuario: " . $_SESSION['username']; ?></p>
+            </div>
+            <?php } ?>
         </div>
     </div>
 </nav>
